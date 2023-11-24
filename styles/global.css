@@ -92,6 +92,10 @@ p {
   border-radius: 10px;
 
 }
-.sub_one{
+.sub_one {
   justify-content: center;
+}
+
+.radio-card.selected {
+  @apply border-amber-400
 }

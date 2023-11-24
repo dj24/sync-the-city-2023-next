@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import Link from "next/link";
 import Image from "next/image";
 export default function Lesson(){
@@ -26,5 +27,27 @@ export default function Lesson(){
         </div>
         
        <center><Link href={"/"}><button className="  button mt-4 mb-5 ms-4 ">Continue</button></Link></center>
+=======
+export default function Lesson() {
+  return (
+    <div className="container-fluid main_sub">
+      <button className="btn btn-danger mt-2 mb-3 rounded-0">X</button>
+      <div className="container main rounded-3"></div>
+      <div className="row m-3">
+        <div className="col-sm-12 mb-3 card me-2 shadow-lg rounded-0  border  border-2 border-danger">
+          <div className="card-body pt-0 text-warning bg-white ">
+            <h5 className="ps-0">INFORMATIONS: </h5>
+          </div>
+        </div>
+        <div className="col-sm-12 card bg-secondary shadow-lg rounded-0 border border-2  border-danger ">
+          <div className="card-body text-dark">
+            <h5 className="ps-0 pt-0">Tips: </h5>
+          </div>
+        </div>
+      </div>
+
+      <button type="button">Continue</button>
+>>>>>>> Stashed changes
     </div>
+  );
 }

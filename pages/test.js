@@ -1,6 +1,30 @@
 import Link from "next/link";
+import { useState } from "react";
+import { My_Soul } from "next/dist/compiled/@next/font/dist/google";
+
+const myQuestions = [
+  {
+    question: "Who invented JavaScript?",
+    answers: ["Douglas Crockford", "Sheryl Sandberg", "Brendan Eich"],
+    correctAnswer: 2,
+  },
+  {
+    question: "Which one of these is a JavaScript package manager?",
+    answers: ["Douglas Crockford", "Sheryl Sandberg", "Brendan Eich"],
+    correctAnswer: 2,
+  },
+  {
+    question: "Which tool can you use to ensure code quality?",
+    answers: ["Douglas Crockford", "Sheryl Sandberg", "Brendan Eich"],
+    correctAnswer: 2,
+  },
+];
 
 export default function Test() {
+  const [points, setpoints] = useState(0);
+  const [getQuestion, setQuestion] = useState(0);
+  const [selectedQuestion, setSelectedQuestion] = useState(null);
+  const [isQuestionAnswered, setIsQuestionAnswered] = useState(false);
   return (
     <main className="p-4 flex flex-col gap-4 h-screen">
       <Link href={"/"}>
@@ -59,30 +83,75 @@ export default function Test() {
         <div className="lesson-node inactive"></div>
       </div>
       <div className="bg-gray-500 rounded-lg w-48 h-64 grow self-center"></div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua
-      </p>
+      <p>{myQuestions[getQuestion].question}</p>
       <div className="flex flex-col gap-4">
-        <div className="radio-card">
+        <div
+          className={`radio-card ${selectedQuestion === 0 && "selected"}`}
+          onClick={() => {
+            setSelectedQuestion(0);
+          }}
+        >
           <div className="radio-dot"></div>
-          Lorem ipsum dolor
+          {myQuestions[getQuestion].answers[0]}
         </div>
-        <div className="radio-card">
+        <div
+          className={`radio-card ${selectedQuestion === 1 && "selected"}`}
+          onClick={() => {
+            setSelectedQuestion(1);
+          }}
+        >
           <div className="radio-dot"></div>
-          Lorem ipsum dolor
+          {myQuestions[getQuestion].answers[1]}
         </div>
-        <div className="radio-card">
+        <div
+          className={`radio-card ${selectedQuestion === 2 && "selected"}`}
+          onClick={() => {
+            setSelectedQuestion(2);
+          }}
+        >
           <div className="radio-dot"></div>
-          Lorem ipsum dolor
-        </div>
-        <div className="radio-card">
-          <div className="radio-dot"></div>
-          Lorem ipsum dolor
+          {myQuestions[getQuestion].answers[2]}
         </div>
       </div>
 
-      <button className="self-center">Next</button>
+      {getQuestion < myQuestions.length - 1 && (
+        <button
+          className="self-center"
+          onClick={() => {
+            if (getQuestion < myQuestions.length - 1) {
+              setQuestion(getQuestion + 1);
+            }
+          }}
+        >
+          Next
+        </button>
+      )}
+
+      {getQuestion >= myQuestions.length && (
+        <button
+          className="self-center"
+          onClick={() => {
+            if (getQuestion > myQuestions.length) {
+              setQuestion(getQuestion - 1);
+            }
+          }}
+        >
+          Back
+        </button>
+      )}
+
+      {getQuestion === myQuestions.length - 1 && (
+        <button
+          className="self-center"
+          onClick={() => {
+            if (getQuestion < myQuestions.length - 1) {
+              setQuestion(getQuestion + 1);
+            }
+          }}
+        >
+          Submit
+        </button>
+      )}
     </main>
   );
 }
