@@ -74,18 +74,24 @@ p {
   @apply rounded-full bg-gray-300 w-4 h-4
 }
 
-.main {
-  /*background-image: url(/images/backgroung_tempate.webp);*/
-  height: 200px;
-  background-color: aqua;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
-  background-attachment: fixed;
-}
-.main_sub{
-  background-image: linear-gradient(blue, aqua);
-  height: 700px;
 
+.sub_two{
+  background-color: white;
+  margin-bottom: 30px;
+  font-size: 10px;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  box-shadow: 100px;
+  background-color: white;
+}
+.sub_three{
+  height: 150px;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+
+}
+.sub_one{
+  justify-content: center;
 }
