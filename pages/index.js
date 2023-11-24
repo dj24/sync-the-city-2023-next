@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { ProgressBar } from "../components/progress-bar";
 import { Container } from "../components/container";
 import { ModuleCard } from "../components/module-card";
@@ -14,8 +15,13 @@ export default function Home() {
       </Head>
       <ProgressBar progress={30} />
       <Steps currentStep={2} totalSteps={5} />
+      <div className="rounded-lg border-2 border-[#FDB772] overflow-hidden">
+        <Image alt="city" src="/isometric_city.png" width="500" height="500" />
+      </div>
       {moduleColours.map((colour, i) => (
-        <ModuleCard background={colour} key={i} />
+        <div style={{ alignSelf: i % 2 === 0 ? "start" : "end", width: "66%" }}>
+          <ModuleCard progress={30} background={colour} key={i} />
+        </div>
       ))}
     </Container>
   );

@@ -40,23 +40,23 @@ img {
   @apply p-1 h-20 w-20 rounded-full shadow bg-blue-800 text-center;
 }
 .lesson-node{
-  @apply bg-primary w-8 h-8 rounded-full flex items-center justify-center text-white
+  @apply bg-primary border-solid border-2 border-[#e66c6c] w-8 h-8 rounded-full flex items-center justify-center text-white
 }
 
 .lesson-node.active{
-  @apply border-solid border-2 bg-white border-[#e66c6c]
+  @apply bg-white
 }
 
 .lesson-node.inactive{
-  @apply bg-gray-400
+  @apply opacity-70 bg-white
 }
 
 .lesson-connector{
-  @apply bg-primary h-2 w-12 flex-1
+  @apply bg-primary h-1 w-12 flex-1
 }
 
 .lesson-connector.inactive{
-  @apply bg-gray-400
+  @apply opacity-70
 }
 
 button {

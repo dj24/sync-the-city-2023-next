@@ -1,7 +1,13 @@
-export const ModuleCard = ({ background, children }) => {
+export const ModuleCard = ({ background, children, progress = 0 }) => {
   return (
-    <div className="rounded-lg h-16" style={{ background }}>
+    <div className="rounded-lg h-24 relative" style={{ background }}>
       {children}
+      <div
+        className="bg-black/30 left-0 bottom-0 h-8 absolute rounded-lg flex items-center p-2 text-white text-sm"
+        style={{ width: `${progress}%` }}
+      >
+        Progress
+      </div>
     </div>
   );
 };
