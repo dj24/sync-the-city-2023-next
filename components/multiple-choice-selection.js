@@ -12,7 +12,7 @@ export const MultipleChoiceSelection = ({
     <div
       onClick={onClick}
       className={clsx(
-        "border rounded-xl border-black p-4 flex items-center gap-3",
+        "border rounded-xl border-black p-4 flex items-center gap-3 text-sm",
         selected && "bg-gray-400",
       )}
     >

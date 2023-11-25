@@ -35,7 +35,7 @@ export default function Expertise({ percentage = 55 }) {
   if (onBoardingScore > 2) {
     level = 1;
   }
-  if (onBoardingScore > 4) {
+  if (onBoardingScore > 3) {
     level = 2;
   }
 

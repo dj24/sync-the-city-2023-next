@@ -15,7 +15,13 @@ export default function Test1() {
   return (
     <Container>
       <Steps currentStep={0} totalSteps={4} />
-      <Image src={"/graphic_1.png"} alt="" width={500} height={500} />
+      <Image
+        style={{ height: 228 }}
+        src={"/graphic_1.png"}
+        alt=""
+        width={500}
+        height={500}
+      />
       <QuestionTitle>What does ISA stand for ?</QuestionTitle>
       <FillInBlanks
         wordsBefore={"Individual"}

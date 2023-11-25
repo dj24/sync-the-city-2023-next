@@ -18,7 +18,13 @@ export default function Test4() {
   return (
     <Container>
       <Steps currentStep={3} totalSteps={4} />
-      <Image src={"/IMG_6448.jpg"} alt="" width={500} height={500} />
+      <Image
+        style={{ height: 228 }}
+        src={"/IMG_6448.jpg"}
+        alt=""
+        width={500}
+        height={500}
+      />
       <QuestionTitle>
         What percentage of your income should you allocate to savings and debt?
       </QuestionTitle>

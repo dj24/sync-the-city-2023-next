@@ -24,7 +24,13 @@ export default function Test3() {
   return (
     <Container>
       <Steps currentStep={2} totalSteps={4} />
-      <Image src={"/IMG_6446.jpg"} alt="" width={500} height={500} />
+      <Image
+        style={{ height: 228 }}
+        src={"/IMG_6446.jpg"}
+        alt=""
+        width={500}
+        height={500}
+      />
       <QuestionTitle>What is the purpose of a credit score?</QuestionTitle>
       {answers.map((answer, i) => (
         <MultipleChoiceSelection
