@@ -1,22 +1,13 @@
+import Image from "next/image";
+
 export const BuddyCoinIcon = () => {
   return (
-    <svg
-      width="32"
-      height="32"
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M20.8251 12.6916C24.7332 18.044 23.3815 25.6833 17.806 29.7542C12.2305 33.8252 9.57414 30.3507 5.666 24.9982C1.75786 19.6457 -1.92211 14.4422 3.65339 10.3712C9.2289 6.3002 16.9169 7.33907 20.8251 12.6916Z"
-        fill="#51A995"
-      />
-      <circle cx="16.5" cy="3.5" r="3.5" fill="#51A995" />
-      <path
-        d="M30 10C30 12.2091 28.5744 14 26.2353 14C23.8962 14 22 12.2091 22 10C22 7.79086 23.8962 6 26.2353 6C28.5744 6 30 7.79086 30 10Z"
-        fill="#51A995"
-      />
-      <circle cx="28.5" cy="21.5" r="3.5" fill="#51A995" />
-    </svg>
+    <Image
+      className="w-8 h-8 scale-[1.75]"
+      width={96}
+      height={96}
+      src={"/card-icon.png"}
+      alt="coin"
+    />
   );
 };

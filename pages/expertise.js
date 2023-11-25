@@ -43,7 +43,10 @@ export default function Expertise({ level = 0, percentage = 55 }) {
           Only {100 - percentage}% more work until you reach Intermediate level!
         </p>
       </div>
-      <ContinueAndBack onContinue={() => router.push("/home")} />
+      <ContinueAndBack
+        onBack={() => router.push("/")}
+        onContinue={() => router.push("/home")}
+      />
     </Container>
   );
 }
