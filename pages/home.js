@@ -13,19 +13,19 @@ const modules = [
     colour: "#B0C5F8",
     title: "Smart Saving",
     content:
-      "One of they key aspects of saving, is knowing where to start. This module will introduce practical advice to build healthy habits.",
+      "One of they key aspects of saving, is knowing where to start. This modules will introduce practical advice to build healthy habits.",
   },
   {
     colour: "#51A995",
     title: "Types of Bank accounts",
     content:
-      "Setting up a bank account can feel overwhelming. This module will give you the basics and help you understand your choices.",
+      "Setting up a bank account can feel overwhelming. This modules will give you the basics and help you understand your choices.",
   },
   {
     colour: "#FDB772",
     title: "What is a credit score?",
     content:
-      "Credit scores are super important, but there is a lot of misunderstanding about what influences them. Take this module to learn more.",
+      "Credit scores are super important, but there is a lot of misunderstanding about what influences them. Take this modules to learn more.",
   },
   {
     colour: "#B0C5F8",

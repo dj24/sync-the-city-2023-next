@@ -42,7 +42,7 @@ export default function Lesson() {
         </ul>
         <Spacer />
         <ContinueAndBack
-          // onContinue={() => router.push("/test")}
+          onContinue={() => router.push("/modules/test1/module1")}
           onBack={() => router.push("/home")}
         />
       </Container>
