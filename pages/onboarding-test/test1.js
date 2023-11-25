@@ -14,7 +14,7 @@ export default function Test1() {
   const [inputValue, setInputValue] = useState("");
   return (
     <Container>
-      <Steps currentStep={0} totalSteps={5} />
+      <Steps currentStep={0} totalSteps={4} />
       <Image src={"/graphic_1.png"} alt="" width={500} height={500} />
       <QuestionTitle>What does ISA stand for ?</QuestionTitle>
       <FillInBlanks
@@ -32,7 +32,7 @@ export default function Test1() {
           if (inputValue.toLowerCase() === correctAnswer.toLowerCase()) {
             localStorage.setItem(
               "onboarding-score",
-              currentOnboardingScore + 1,
+              parseInt(currentOnboardingScore) + 1,
             );
           }
           router.push("/onboarding-test/test2");
