@@ -1,11 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { ProgressBar } from "../components/progress-bar";
 import { Container } from "../components/container";
-import { ModuleCard } from "../components/module-card";
-import { BuddyBucks } from "../components/buddy-bucks";
-import { YourCity } from "../components/your-city";
-import { BuddyIllustration } from "../components/buddy-illustration";
 
 export default function(){
     return(
@@ -14,7 +9,7 @@ export default function(){
             <title>Game page</title>
            <link rel="icon" href="/favicon.ico" />
             </Head>
-            <ProgressBar progress={30} />
+    
             <Image width={500} height={500} className="main_sub" src="/main_isometric.jpg" alt="" />
             <div className="flex ">
                 <div className="mx-5 first_row"><Image width={70} height={70} src="/bag.jpg" alt="" /></div>
