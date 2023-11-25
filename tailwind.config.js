@@ -9,9 +9,11 @@ module.exports = {
     extend: {
       backgroundColor: {
         primary: "#F19679",
+        buddy: "#51A995",
       },
-      border: {
+      borderColor: {
         primary: "#F19679",
+        buddy: "#51A995",
       },
     },
   },
