@@ -17,7 +17,13 @@ export default function Test2() {
   return (
     <Container>
       <Steps currentStep={1} totalSteps={4} />
-      <Image src={"/IMG_6459 1.jpg"} alt="" width={500} height={500} />
+      <Image
+        style={{ height: 228 }}
+        src={"/IMG_6459 1.jpg"}
+        alt=""
+        width={500}
+        height={500}
+      />
       <QuestionTitle>What is the UK's central bank?</QuestionTitle>
       <Spacer />
       <MultipleChoiceSelection
