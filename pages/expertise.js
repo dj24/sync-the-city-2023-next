@@ -54,12 +54,12 @@ export default function Expertise({ percentage = 55 }) {
         <ExpertiseCard percentage={percentage} isSelected={level === 2}>
           {levels[2]}
         </ExpertiseCard>
-        {level < 2 && (
-          <p className="text-center mt-8">
-            Only {100 - percentage}% more work until you reach{" "}
-            {levels[level + 1]} level!
-          </p>
-        )}
+        {/*{level < 2 && (*/}
+        {/*  <p className="text-center mt-8">*/}
+        {/*    Only {100 - percentage}% more work until you reach{" "}*/}
+        {/*    {levels[level + 1]} level!*/}
+        {/*  </p>*/}
+        {/*)}*/}
       </div>
       <ContinueAndBack
         onBack={() => router.push("/")}
