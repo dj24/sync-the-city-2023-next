@@ -26,7 +26,10 @@ const levels = ["Beginner", "Intermediate", "Advanced"];
 
 export default function Expertise({ percentage = 55 }) {
   const router = useRouter();
-  const onBoardingScore = localStorage.getItem("onboarding-score") || 0;
+  let onBoardingScore = 0;
+  if ("localStorage" in window) {
+    onBoardingScore = localStorage?.getItem("onboarding-score") || 0;
+  }
 
   let level = 0;
   if (onBoardingScore > 2) {
