@@ -18,7 +18,7 @@ export default function Sign_up_form() {
         </h1>
         <form
           target="_blank"
-          action="https://formsubmit.co/syncthecitysignups@gmail.com"
+          action="https://formsubmit.co/d10e495c9a34adc996509098ae3ece8e"
           method="POST"
           className="flex flex-col items-center gap-4 w-full px-4"
         >
