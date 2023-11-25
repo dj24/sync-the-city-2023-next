@@ -81,8 +81,6 @@ export default function Test() {
           Lorem ipsum dolor
         </div>
       </div>
-
-      <button className="self-center">Next</button>
     </main>
   );
 }
