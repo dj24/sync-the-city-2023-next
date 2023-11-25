@@ -6,6 +6,7 @@ import { ModuleCard } from "../components/module-card";
 import { BuddyBucks } from "../components/buddy-bucks";
 import { YourCity } from "../components/your-city";
 import { BuddyIllustration } from "../components/buddy-illustration";
+import Link from "next/link";
 
 const modules = [
   {
@@ -42,9 +43,12 @@ export default function Home() {
       </Head>
       <ProgressBar progress={30} />
       <BuddyBucks />
-      <div className="rounded-lg border-2 border-[#FDB772] overflow-hidden">
+      <Link
+        href="/game"
+        className="rounded-lg border-2 border-[#FDB772] overflow-hidden"
+      >
         <Image alt="city" src="/isometric_city.png" width="500" height="500" />
-      </div>
+      </Link>
       <YourCity />
       {modules.map((module, i) => (
         <div style={{ alignSelf: i % 2 === 0 ? "start" : "end", width: "66%" }}>
