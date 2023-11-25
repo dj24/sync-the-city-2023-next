@@ -74,7 +74,6 @@ p {
   text-align: center;
   font-style: italic;
   box-shadow: 100px;
-  background-color: white;
 }
 .sub_three{
   height: 150px;
@@ -85,6 +84,31 @@ p {
 }
 .sub_one {
   justify-content: center;
+}
+.game_sub{
+  justify-content: right;
+  height: 50px;
+  width: 200px;
+  border: 1px solid red;
+  border-radius: 10px;
+  display: flex;
+}
+.grid-flow-row{
+  grid-auto-flow: column;
+}
+.first_row{
+  border: 2px solid rgba(0, 255, 204, 0.358);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.secoond_row{
+  border: 2px solid red;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main_sub{
+  height: 500px;
+  border: 2px solid rgb(0, 72, 255);
 }
 
 input {
