@@ -22,8 +22,23 @@ const ExpertiseCard = ({ children, isSelected, percentage }) => {
   );
 };
 
-export default function Expertise({ level = 0, percentage = 55 }) {
+const levels = ["Beginner", "Intermediate", "Advanced"];
+
+export default function Expertise({ percentage = 55 }) {
   const router = useRouter();
+  let onBoardingScore = 0;
+  if (typeof window !== "undefined") {
+    onBoardingScore = localStorage.getItem("onboarding-score") || 0;
+  }
+
+  let level = 0;
+  if (onBoardingScore > 2) {
+    level = 1;
+  }
+  if (onBoardingScore > 4) {
+    level = 2;
+  }
+
   return (
     <Container>
       <div className="flex-1 flex flex-col gap-5 justify-center">
@@ -31,19 +46,25 @@ export default function Expertise({ level = 0, percentage = 55 }) {
           We Believe your expertise Level is:
         </h1>
         <ExpertiseCard percentage={percentage} isSelected={level === 0}>
-          Beginner
+          {levels[0]}
         </ExpertiseCard>
         <ExpertiseCard percentage={percentage} isSelected={level === 1}>
-          Intermediate
+          {levels[1]}
         </ExpertiseCard>
         <ExpertiseCard percentage={percentage} isSelected={level === 2}>
-          Advanced
+          {levels[2]}
         </ExpertiseCard>
-        <p className="text-center mt-8">
-          Only {100 - percentage}% more work until you reach Intermediate level!
-        </p>
+        {/*{level < 2 && (*/}
+        {/*  <p className="text-center mt-8">*/}
+        {/*    Only {100 - percentage}% more work until you reach{" "}*/}
+        {/*    {levels[level + 1]} level!*/}
+        {/*  </p>*/}
+        {/*)}*/}
       </div>
-      <ContinueAndBack onContinue={() => router.push("/home")} />
+      <ContinueAndBack
+        onBack={() => router.push("/")}
+        onContinue={() => router.push("/home")}
+      />
     </Container>
   );
 }

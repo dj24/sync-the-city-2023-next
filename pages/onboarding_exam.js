@@ -1,9 +1,12 @@
-import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { Container } from "../components/container";
+import { ContinueAndBack } from "../components/continue-and-back";
 
 export default function Test() {
+  const router = useRouter();
   return (
-    <main className="flex flex-col items-center justify-center h-screen bg-[#FFF4E9]">
+    <Container className="bg-[#FFF4E9] items-center justify-center">
       <p className="mb-4 text-center">
         To decide which level you are at, <br />
         please take this quick test
@@ -17,10 +20,10 @@ export default function Test() {
             alt="Picture of the author"
           />
         </div>
-        <div>
-          <button className="text-black px-4 py-2 rounded-br">Continue</button>
-        </div>
+        <ContinueAndBack
+          onContinue={() => router.push("/onboarding-test/test1")}
+        />
       </div>
-    </main>
+    </Container>
   );
 }
