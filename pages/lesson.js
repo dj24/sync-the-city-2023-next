@@ -41,7 +41,10 @@ export default function Lesson() {
           </li>
         </ul>
         <Spacer />
-        <ContinueAndBack onBack={() => router.push("/home")} />
+        <ContinueAndBack
+          onContinue={() => router.push("/test")}
+          onBack={() => router.push("/home")}
+        />
       </Container>
     </>
   );

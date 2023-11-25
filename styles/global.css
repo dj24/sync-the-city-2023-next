@@ -86,3 +86,7 @@ p {
 .sub_one{
   justify-content: center;
 }
+
+input {
+  @apply border rounded-lg bg-transparent border-black p-2 text-center
+}
