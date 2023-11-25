@@ -1,38 +1,33 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Container } from "../components/container";
 
 export default function Sign_up_form() {
   return (
-    <main
-      className="bg-[#FFF4E9]"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
+    <Container className="bg-[#FFF4E9]">
       <div className="container flex flex-col items-center gap-4">
         <Image
           width={400}
           height={400}
           src="/buddylogo.png"
           alt={"buddy"}
-          className="-mb-16 -mt-16"
+          className="-mb-16"
         />
-        <h1>Sign up to register your interest!</h1>
+        <h1 className="text-2xl text-center">
+          Sign up to register your interest!
+        </h1>
         <form
           target="_blank"
           action="https://formsubmit.co/syncthecitysignup@gmail.com"
           method="POST"
-          className="flex flex-col items-center gap-4"
+          className="flex flex-col items-center gap-4 w-full px-4"
         >
           <input
             type="email"
             name="email"
-            className="form-control"
             placeholder="Email Address"
             required
+            className="w-full bg-white"
           />
           <div>
             <button className="flex-1 py-4">Submit Form</button>
@@ -42,6 +37,6 @@ export default function Sign_up_form() {
           </div>
         </form>
       </div>
-    </main>
+    </Container>
   );
 }
