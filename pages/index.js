@@ -9,6 +9,9 @@ import { useEffect } from "react";
 
 export default function Test() {
   const router = useRouter();
+  useEffect(() => {
+    localStorage.clear("onboarding-score");
+  }, []);
   return (
     <Container className={"flex flex-col items-center justify-center"}>
       <Image

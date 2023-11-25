@@ -4,9 +4,13 @@ import { useRouter } from "next/router";
 import { Container } from "../components/container";
 import { ContinueAndBack } from "../components/continue-and-back";
 import { Spacer } from "../components/spacer";
+import { useEffect } from "react";
 
 export default function Test() {
   const router = useRouter();
+  useEffect(() => {
+    localStorage.clear("onboarding-score");
+  }, []);
   return (
     <Container
       className={"flex flex-col items-center justify-start bg-[#F1E5FF]"}
