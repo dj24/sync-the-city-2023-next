@@ -8,7 +8,7 @@ export const ContinueAndBack = ({ onBack, onContinue }) => {
           <BackIcon />
         </button>
       )}
-      <button onClick={onContinue} className="flex-1 py-4">
+      <button onClick={onContinue} className="flex-1 py-4 min-w-50">
         Continue
       </button>
     </div>

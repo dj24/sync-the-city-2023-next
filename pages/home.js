@@ -10,39 +10,27 @@ import { BuddyIllustration } from "../components/buddy-illustration";
 const modules = [
   {
     colour: "#B0C5F8",
-    title: "Lorem Ipsum",
+    title: "Smart Saving",
     content:
-      "Learn about loreum ipsum ghsi ahev aksg deicgwvbc shavetc eisgwv dyvwrti dhdsvertj dhdudk sgstrwhi sbdhfi sbhdyki.",
+      "One of they key aspects of saving, is knowing where to start. This module will introduce practical advice to build healthy habits.",
   },
   {
     colour: "#51A995",
-    title: "Lorem Ipsum",
+    title: "Types of Bank accounts",
     content:
-      "Learn about loreum ipsum ghsi ahev aksg deicgwvbc shavetc eisgwv dyvwrti dhdsvertj dhdudk sgstrwhi sbdhfi sbhdyki.",
+      "Setting up a bank account can feel overwhelming. This module will give you the basics and help you understand your choices.",
   },
   {
     colour: "#FDB772",
-    title: "Lorem Ipsum",
+    title: "What is a credit score?",
     content:
-      "Learn about loreum ipsum ghsi ahev aksg deicgwvbc shavetc eisgwv dyvwrti dhdsvertj dhdudk sgstrwhi sbdhfi sbhdyki.",
+      "Credit scores are super important, but there is a lot of misunderstanding about what influences them. Take this module to learn more.",
   },
   {
     colour: "#B0C5F8",
-    title: "Lorem Ipsum",
+    title: "Introduction to Income Tax",
     content:
-      "Learn about loreum ipsum ghsi ahev aksg deicgwvbc shavetc eisgwv dyvwrti dhdsvertj dhdudk sgstrwhi sbdhfi sbhdyki.",
-  },
-  {
-    colour: "#51A995",
-    title: "Lorem Ipsum",
-    content:
-      "Learn about loreum ipsum ghsi ahev aksg deicgwvbc shavetc eisgwv dyvwrti dhdsvertj dhdudk sgstrwhi sbdhfi sbhdyki.",
-  },
-  {
-    colour: "#FDB772",
-    title: "Lorem Ipsum",
-    content:
-      "Learn about loreum ipsum ghsi ahev aksg deicgwvbc shavetc eisgwv dyvwrti dhdsvertj dhdudk sgstrwhi sbdhfi sbhdyki.",
+      "Income tax is a big part of life. Understanding the basics will help you make informed decisions.",
   },
 ];
 export default function Home() {
